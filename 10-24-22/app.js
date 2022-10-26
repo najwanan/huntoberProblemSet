@@ -9,3 +9,11 @@ solve([[1,2],[4,4],[5,6,6]]),4)
 solve([[1,2],[3,4],[5,6]]),8)
 solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)*/
 
+//parameters an array of arrays
+//return an integer that represents the number of unique subarrays that can be formed with the given arguments
+
+//each subarray has to include an element from each of the given subarrays
+
+//brute force solution - each unique subarray is comprised of combinations
+//need to know the length of each subarray
+// need a place to store all of the combinations created from the subarray [map object]
