@@ -12,11 +12,13 @@ nthSmallest({15,20,7,10,4,3} ,3) ==> return (7)
 nthSmallest({15,20,7,10,4,3} ,3) ==> return (7) 
 nthSmallest({177,225,243,-169,-12,-5,2,92} ,5) ==> return (92) */
 
-//sort the array 
-//then take nth-1 element in the sort 
-//lexigraphical 
+//sort the array
+//then take nth-1 element in the sort
+//lexigraphical
 
 function findN(arr, n) {
-    let newArr = arr.sort(function (a, b) { a - b })
-    return newArr[n-1]
+  let newArr = arr.sort(function (a, b) {
+    a - b;
+  });
+  return newArr[n - 1];
 }
