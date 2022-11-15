@@ -40,7 +40,7 @@ function sortOdd(arr) {
     console.log(oddArr.sort(function(a,b){return a-b}))
     //sorted oddarr
 
-    arr.map((x, i)=>x%2!==0?:null) 
+    console.log(arr.map((x)=>x%2===0?x: oddArr.shift() ))
 }
 
 sortOdd([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
