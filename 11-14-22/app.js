@@ -30,12 +30,13 @@ gimme([5, 10, 14]) => 1
 
 function findMidNum(arr) {
  
-    let newArr = arr.sort(function (a, b) {
+  
+    let newArr = [...arr].sort(function (a, b) {
       return a - b;
     });
     let middleNum = newArr[1]
 
-    console.log(arr, newArr, middleNum)
+    console.log(arr, newArr, middleNum);
     console.log(arr.indexOf(middleNum));
     return arr.indexOf(middleNum)
     
