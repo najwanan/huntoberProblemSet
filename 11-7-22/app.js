@@ -36,11 +36,20 @@ function findDeletedNum(arr) {
     }
 }
 
+//return arr.filter(n=> mixArr.indexOf(n)===-1)
+//if you sum both array sets and subtract you'll find the missing number 
 findDeletedNum([3, 4, 1, 5]);
 //sort [1, 3, 4, 5]
 //if you subtract arr[i+1]-arr[i] and it's more than 1 then return that number as soon as you find it
 //once you find the index of the missing num how to return the missing value? in this case you'd return arr[i]-1 or 3-1 = 2
+/* if(arr.length===mixArr.length){
+  return 0
+}else{
+    let arrSum = arr.reduce((a, c)=> a+c)
+    let mixSum = mixArr.reduce((a, c)=> a+c, 0)
+    return arrSum = mixSum
 
+}*/
 
 
 
