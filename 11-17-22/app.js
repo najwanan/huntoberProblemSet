@@ -27,3 +27,8 @@ function getLength(arr) {
     let average = sumArr/arr.length
     console.log(sumArr)
 }
+
+function avgLengthRepeat(arr) {
+    const avgLength = Math.round(arr.join('').length / arr.length)
+    return arr.map(str=> str[0].repeat(avgLength))
+}
